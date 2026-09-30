@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #111;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 30px;
+}
+
+header {
+  margin-bottom: 35px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  color: #666;
+}
+
+.api-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px #0000000d;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 14px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #111;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.api-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.api-header h3 {
+  margin: 0 0 8px;
+}
+
+.endpoint {
+  color: #777;
+  word-break: break-all;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.api-details {
+  display: flex;
+  gap: 35px;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.delete-button {
+  background: #eee;
+  color: #111;
+}
+
+@media (max-width: 650px) {
+  main {
+    padding: 35px 18px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  .api-header,
+  .api-details {
+    flex-direction: column;
+  }
+}
+.status {
+  font-weight: bold;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #eee;
+}
+
+.status.online {
+  color: #176b36;
+  background: #e4f6e9;
+}
+
+.status.offline {
+  color: #a32020;
+  background: #fde7e7;
+}
+
+.status.checking {
+  color: #7a5b00;
+  background: #fff4cc;
+}
+
